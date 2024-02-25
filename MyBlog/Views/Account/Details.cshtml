@@ -1,0 +1,29 @@
+﻿@model User
+
+<h2>Detail Pengguna (@Model.Id)</h2>
+
+<table>
+    <tr>
+        <th>Username</th>
+        <td>@Model.Username</td>
+    </tr>
+    <tr>
+        <th>Nama</th>
+        <td>@Model.Name</td>
+    </tr>
+    <tr>
+        <th>Tanggal Lahir</th>
+        <td>@Model.TanggalLahir</td>
+    </tr>
+    <tr>
+        <th>Peran</th>
+        <td>@Model.Role</td>
+    </tr>
+</table>
+
+<a asp-action="Account" asp-route-id="@Model.Id" class="btn btn-primary">Edit</a> |
+<a asp-action="Show" class="btn btn-default">Kembali ke Daftar</a>
+<!--
+    cara nyari detailnya di ketik di urlnya langsung jadi contohnya
+    account/detail/1
+-->
